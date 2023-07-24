@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+/* html,body{
+    height: 100%;
+    width: 100%;
+} */
+
+@media screen and (min-width:320px) and (max-width:769px) {
+    .main{
+        display: flex;
+        flex-direction: column;                
+    }
+    
+
+    /* Nav Bar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4vh;        
+        border-bottom: 1px solid deeppink;
+    }
+    nav ul{
+        position: relative;
+        display: flex;
+        height: 4.1vh;
+        justify-content: space-around;
+        align-items: center;
+        width: 40vw;
+        /* background-color: aqua; */
+    }
+    .back{
+        height: 2.5vh;
+        width: 4.5vw;        
+        margin-left: 5.4vw;
+    }
+    .nav{
+        margin-right: 5vw;    
+        /* background-color: purple; */
+    }    
+   
+    .nav ul li a{
+        color: rgb(33,33,33);
+        font-size:2.7vw;
+        padding: 0.5vw;
+    }
+
+    .fa-brands{
+        color:rgb(0, 195, 255);
+        cursor: pointer;        
+        /* background-color: red; */
+        font-size:3.3vw;
+    }  
+   
+    
+    /* Right */
+    div.right{
+        background-color:blueviolet;
+        height: 50vh;
+        width: 100%;
+    }
+    .right .right-top{
+        height:25vh;
+        width: 100%;
+        background-color: lightpink;
+        display: flex;
+    }
+    .right .right-bottom{
+        height: 25vh;
+        width: 100%;
+        background-color: gold;
+        background-image: url(https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/w/t/p4986-16142593246037a47ca17d5.jpg?w=400);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center top 15%;
+        
+    }
+    .right .right-top-left{
+        width: 45%;
+        height: 100%;
+        background-color: cyan;
+        background-image: url(https://recipes.timesofindia.com/thumb/53314156.cms?width=1200&height=900);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .right .right-top-right{
+        width: 55%;
+        height: 100%;
+        background-color: teal;
+        background-image: url(https://recipesinhindi.net/wp-content/uploads/2018/04/Raj-bhog-recipe-18.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left 22% bottom 1%;
+        
+    }   
+    
+    .hover{
+        padding: 2vw;            
+        left: 1.4vw;        
+        position: absolute;
+        border-radius: 1.3vw;
+        z-index: -1;
+        background-color: rgba(135, 206, 250, 0.698);
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    .nav ul li:nth-of-type(1):hover~.hover{
+        opacity: 1;
+        width: 11vw;
+        height: 2.5vh;
+    }
+    .nav ul li:nth-of-type(2):hover~.hover{
+        opacity: 1;
+        width: 14.7vw;
+        height: 2.5vh;
+        left: 15.5vw;
+    }
+    .nav ul li:nth-of-type(3):hover~.hover{
+        opacity: 1;
+        left: 32vw;        
+        width: 7.9vw;
+        height: 3.5vh;
+        border-radius:50%;
+    }
+
+    .left{
+        width: 100vw;
+        height:50vh;
+        display: flex;       
+        flex-direction: column;
+        align-content: center;
+        gap: 4vh;        
+    }
+    section{
+        width: 100vw;
+        height: 18vh;
+        /* background-color: purple; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 10vh;        
+    }
+    .container{
+        height:30vh;
+        width: 100vw;
+        /* background-color: aqua; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        padding: 2.5vh 3.6vw;      
+    }
+    h1{
+        width: 100vw;
+        text-align: center; 
+        font-size: 12vw;
+        font-style: italic;       
+    }
+    p{
+        color: rgb(181, 168, 168);
+        text-align: justify;
+        font-size: 5.3vw;
+        line-height: 2.7vh;
+        
+    }
+    .button{
+        height:4vh;
+        margin-top: 1.5vh;
+        width: 70vw;
+        display: flex;
+        justify-content: center;
+        gap: 2vw;
+        align-items: center;
+    }
+    .btn-1{
+        width: 25vw;
+        height: 3.5vh;
+        background-color:#1a73e8;
+        border-radius: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        cursor: pointer;  
+        transition: all 0.2s; 
+        transform: scale(1);
+    }
+    .btn-1:hover{
+        box-shadow:0vw 0vh 0.4vw 0.1vw rgb(100, 98, 98);
+        transform: scale(1.03);
+    }
+    .btn-2{
+        width: 25vw;
+        height: 3.5vh;
+        background-color: deeppink;
+        border-radius: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        cursor: pointer;
+        transition: all 0.2s; 
+        transform: scale(1);  
+    }
+    .btn-2:hover{
+        box-shadow:0vw 0vh 0.4vw 0.1vw rgb(100, 98, 98);
+        transform: scale(1.03);
+    }
+    .btn-1>a{
+        color: #fff;
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .btn-2>a{
+        font-weight: 600;
+        color: #fff;
+        font-size: 3vw;
+    }
+}
+
+/* For Laptop */
+@media screen and (min-width:769px) {
+        .main{
+            height: 100vh;
+            width: 100%;
+            /* background-color: lightcyan; */
+            display: flex;
+        }
+        div.left{
+            /* background-color: red; */
+            height: 100vh;
+            width: 40vw;
+        }
+        div.right{
+            /* background-color:blueviolet; */
+            height: 100vh;
+            width: 60vw;
+        }
+        .right .right-top{
+            height:45vh;
+            width: 60vw;
+            /* background-color: lightpink; */
+            display: flex;
+        }
+        .right .right-bottom{
+            height: 55vh;
+            width: 60vw;
+            /* background-color: gold; */
+            background-image: url(https://im1.dineout.co.in/images/uploads/restaurant/sharpen/4/w/t/p4986-16142593246037a47ca17d5.jpg?w=400);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center top 15%;
+            
+        }
+        .right .right-top-left{
+            width: 45%;
+            height: 100%;
+            /* background-color: cyan; */
+            background-image: url(https://recipes.timesofindia.com/thumb/53314156.cms?width=1200&height=900);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        .right .right-top-right{
+            width: 55%;
+            height: 100%;
+            background-color: teal;
+            background-image: url(https://recipesinhindi.net/wp-content/uploads/2018/04/Raj-bhog-recipe-18.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left 22% bottom 1%;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 8vh;
+            /* background-color: red; */
+            border-bottom: 1px solid deeppink;
+        }
+        .back{
+            height: 4.5vh;
+            width: 1.5vw;
+            /* background-color: red; */
+            margin-left: 5%;
+        }
+        .nav{
+            margin-right: 5%;    
+            /* background-color: purple; */
+        }
+        nav ul{
+            position: relative;
+            display: flex;
+            height: 5vh;
+            justify-content: space-around;
+            align-items: center;
+            width: 20vw;
+            /* background-color: aqua; */
+        }
+        .nav ul li a{
+            color: rgb(33,33,33);
+            font-size:1.3vw;
+            padding: 0.5vw;
+        }
+        
+        .hover{               
+            height: 5vh;
+            left: 0;
+            position: absolute;
+            border-radius: 0.3vw;
+            z-index: -1;
+            background-color: rgba(135, 206, 250, 0.698);
+            opacity: 0;
+            transition: all 0.2s;
+        }
+        .nav ul li:nth-of-type(1):hover~.hover{
+            opacity: 1;
+            left:0.6vw ;
+            width: 6vw;
+        }
+        .nav ul li:nth-of-type(2):hover~.hover{
+            opacity: 1;
+            width: 7.7vw;
+            left: 8vw;
+        }
+        .nav ul li:nth-of-type(3):hover~.hover{
+            opacity: 1;
+            left: 16.7vw;
+            width: 2.9vw;
+            height: 6vh;
+            border-radius:50%;
+        }
+        
+        .fa-solid{
+            color: rgb(53, 53, 53);
+        }
+        .fa-brands{
+            color:rgb(0, 195, 255);
+            cursor: pointer;
+        }
+        
+        section{
+            width: 100%;
+            height: 92%;
+            /* background-color: purple; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            height:45% ;
+            width: 80%;
+            /* background-color: aqua; */
+        }
+        
+        h1{
+           text-align: center; 
+           font-size: 4vw;
+           font-style: italic;
+        }
+        p{
+            color: rgb(181, 168, 168);
+            text-align: justify;
+            font-size: 1.3vw;
+            line-height: 4.3vh;
+            margin-bottom:2.5vh ;
+        }
+        .button{
+            height:9vh;
+            /* background-color: green; */
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .btn-1{
+            width: 15vw;
+            height: 9vh;
+            background-color:#1a73e8;
+            border-radius: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            cursor: pointer;  
+            transition: all 0.2s; 
+            transform: scale(1);
+        }
+        .btn-1:hover{
+            box-shadow:0vw 0vh 0.4vw 0.1vw rgb(100, 98, 98);
+            transform: scale(1.03);
+        }
+        .btn-2{
+            width: 15vw;
+            height: 9vh;
+            background-color: deeppink;
+            border-radius: 15vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;  
+            cursor: pointer;
+            transition: all 0.2s; 
+            transform: scale(1);  
+        }
+        .btn-2:hover{
+            box-shadow:0vw 0vh 0.4vw 0.1vw rgb(100, 98, 98);
+            transform: scale(1.03);
+        }
+        .btn-1>a{
+            color: #fff;
+            font-weight: 600;
+        }
+        .btn-2>a{
+            font-weight: 600;
+            color: #fff;
+        }
+    }
